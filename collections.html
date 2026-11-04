@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Exclusive Collections | AUREX LUXURY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="luxury-pages.css">
+    <link rel="stylesheet" href="brand-pages.css">
+</head>
+
+<body>
+     <header class="nav-bar">
+    <a class="logo" href="index.html">AUREX <span>/</span> LUXURY</a>
+    <nav class="nav-links" id="navLinks"><a href="watches.html">Watches</a><a href="automobiles.html">Automobiles</a><a
+        href="collections.html">Collections</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="nav-actions"><button id="searchToggle" aria-label="Open search">⌕</button><button
+        aria-label="Wishlist">♡</button><button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+    <form class="search-panel" id="searchPanel"><span>⌕</span><input id="searchInput" type="search"
+        placeholder="Search timepieces or automobiles..." aria-label="Search products" /><button type="button"
+        id="searchClose">×</button></form>
+  </header>
+    <main>
+        <section class="page-hero"
+            style="--hero:url('https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?auto=format&fit=crop&w=2200&q=85')">
+            <div class="page-hero__content reveal"><span class="eyebrow">The AUREX edit</span>
+                <h1>CURATED FOR<br>THE EXTRAORDINARY</h1>
+                <p>Discover exceptional timepieces and extraordinary automobiles, selected for those who appreciate true
+                    luxury.</p>
+            </div>
+        </section>
+        <section class="section-wrap">
+            <div class="section-heading reveal"><span class="eyebrow">Featured collections</span>
+                <h2>One destination. Every expression of luxury.</h2>
+                <p>Explore our most desirable edits, drawn from the live AUREX catalogue. Every product links directly
+                    to its individual detail experience.</p>
+            </div>
+            <div class="collection-grid reveal"><a class="collection-card" href="#collection=popular-watches"><img
+                        src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1400&q=85"
+                        alt="Popular watches">
+                    <div class="collection-card__copy"><span class="eyebrow">06 timepieces</span>
+                        <h3>Most Popular Watches</h3>
+                        <p>Rolex, Patek Philippe, Audemars Piguet, Omega and Cartier icons.</p><span
+                            class="gold-button">View collection</span>
+                    </div>
+                </a><a class="collection-card" href="#collection=popular-automobiles"><img
+                        src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=1400&q=85"
+                        alt="Popular automobiles">
+                    <div class="collection-card__copy"><span class="eyebrow">06 automobiles</span>
+                        <h3>Most Popular Automobiles</h3>
+                        <p>Ferrari, Lamborghini, Porsche, Rolls-Royce and more.</p><span class="gold-button">View
+                            collection</span>
+                    </div>
+                </a><a class="collection-card" href="#collection=exclusive"><img
+                        src="https://images.unsplash.com/photo-1495707964403-4f44a16f6f4b?auto=format&fit=crop&w=1400&q=85"
+                        alt="Exclusive luxury collection">
+                    <div class="collection-card__copy"><span class="eyebrow">Rare & prestigious</span>
+                        <h3>Exclusive Luxury</h3>
+                        <p>Exceptional objects chosen for rarity, provenance and presence.</p><span
+                            class="gold-button">View collection</span>
+                    </div>
+                </a><a class="collection-card" href="#collection=performance"><img
+                        src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1400&q=85"
+                        alt="Performance automobile">
+                    <div class="collection-card__copy"><span class="eyebrow">Speed & precision</span>
+                        <h3>Performance Collection</h3>
+                        <p>Sports watches and performance vehicles for those who move differently.</p><span
+                            class="gold-button">View collection</span>
+                    </div>
+                </a><a class="collection-card" href="#collection=classics"><img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=85"
+                        alt="Timeless watch">
+                    <div class="collection-card__copy"><span class="eyebrow">Heritage & design</span>
+                        <h3>Timeless Classics</h3>
+                        <p>Vintage-inspired silhouettes and enduring automotive design.</p><span
+                            class="gold-button">View collection</span>
+                    </div>
+                </a></div>
+        </section>
+        <section class="section-wrap" id="collectionArea">
+            <div class="section-heading reveal"><span class="eyebrow">Individual highlights</span>
+                <h2>Pieces worth knowing.</h2>
+                <p>Filter the current edit by category, then open any product to view its full story.</p>
+            </div>
+            <div class="filter-bar" id="collectionFilters"><button class="filter-button is-active"
+                    data-filter="all">All</button><button class="filter-button"
+                    data-filter="watch">Watches</button><button class="filter-button"
+                    data-filter="car">Automobiles</button><button class="filter-button"
+                    data-filter="exclusive">Exclusive</button><button class="filter-button"
+                    data-filter="performance">Performance</button><button class="filter-button"
+                    data-filter="classic">Classics</button></div>
+            <div class="mini-products" id="featuredProducts"></div>
+        </section>
+        <section class="cinematic reveal"
+            style="--hero:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=2200&q=85')">
+            <div><span class="eyebrow">Your next chapter</span>
+                <h2>FIND SOMETHING EXCEPTIONAL.</h2><a class="gold-button" href="index.html#products">Explore all
+                    products</a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer"><span>AUREX LUXURY</span><small>Curated for the extraordinary.</small></footer>
+    <script src="brand-pages.js"></script>
+</body>
+
+</html>

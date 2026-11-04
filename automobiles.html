@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Aurex / Automobiles</title>
+    <link rel="stylesheet" href="style.css">
+        <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="luxury-pages.css">
+</head>
+
+<body>
+    <header class="nav-bar">
+    <a class="logo" href="index.html">AUREX <span>/</span> LUXURY</a>
+    <nav class="nav-links" id="navLinks"><a href="watches.html">Watches</a><a href="automobiles.html">Automobiles</a><a
+        href="collections.html">Collections</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="nav-actions"><button id="searchToggle" aria-label="Open search">⌕</button><button
+        aria-label="Wishlist">♡</button><button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+    <form class="search-panel" id="searchPanel"><span>⌕</span><input id="searchInput" type="search"
+        placeholder="Search timepieces or automobiles..." aria-label="Search products" /><button type="button"
+        id="searchClose">×</button></form>
+  </header>
+    <main>
+        <section class="page-hero auto">
+            <div class="hero-copy">
+                <p class="kicker gold">02 / THE AUTOMOTIVE EDIT</p>
+                <h1>Motion, <em>unbound.</em></h1>
+                <p>Rare performance, sculpted design, and engineering that turns every journey into an occasion.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-head">
+                <div>
+                    <p class="label gold">THE AUREX GARAGE</p>
+                    <h2 class="title">The drive <em>edit.</em></h2>
+                </div>
+                <p id="carCount" class="label">06 VEHICLES</p>
+            </div>
+            <div class="filters"><input class="control" id="carSearch" placeholder="Search model or marque"
+                    aria-label="Search automobiles"><select class="control" id="carBrand">
+                    <option value="all">All marques</option>
+                    <option>Ferrari</option>
+                    <option>Lamborghini</option>
+                    <option>Porsche</option>
+                    <option>BMW</option>
+                    <option>Mercedes-Benz</option>
+                    <option>Rolls-Royce</option>
+                    <option>Bugatti</option>
+                    <option>McLaren</option>
+                </select><select class="control" id="carCategory">
+                    <option value="all">All categories</option>
+                    <option>Supercars</option>
+                    <option>Hypercars</option>
+                    <option>SUVs</option>
+                    <option>Sedans</option>
+                    <option>Sports Cars</option>
+                    <option>Coupes</option>
+                    <option>Convertibles</option>
+                    <option>Electric Vehicles</option>
+                </select><select class="control" id="carSort">
+                    <option value="featured">Sort: Featured</option>
+                    <option value="low">Price: Low to high</option>
+                    <option value="high">Price: High to low</option>
+                    <option value="power">Horsepower</option>
+                </select></div>
+            <div class="catalog" id="carCatalog"></div>
+        </section>
+        <section class="section" id="configurator">
+            <div class="section-head">
+                <div>
+                    <p class="label gold">ENGINEERED BY YOU</p>
+                    <h2 class="title">The personal <em>commission.</em></h2>
+                </div>
+                <p class="label">CONFIGURE / SAVE / REQUEST</p>
+            </div>
+            <div class="builder">
+                <div class="builder-preview">
+                    <div>
+                        <p class="label gold">LIVE VEHICLE PREVIEW</p>
+                        <p class="quote-message" id="carSaved"></p>
+                    </div><img class="car-preview" id="carPreview"
+                        src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&q=85"
+                        alt="Configured Aurex vehicle preview">
+                    <div class="preview-caption">
+                        <div>
+                            <p class="label">AUREX COMMISSION</p>
+                            <h3 id="carPreviewName">Revuelto</h3>
+                        </div><strong class="price" id="carTotal">$608,358</strong>
+                    </div>
+                </div>
+                <div class="builder-options">
+                    <h3>Specify every detail.</h3>
+                    <div class="option-group"><label>Exterior paint & finish</label>
+                        <div class="swatches" data-option="paint"><button class="swatch active"
+                                data-value="Verde metallic" data-price="0">Verde metallic</button><button class="swatch"
+                                data-value="Nero gloss" data-price="4200">Nero gloss</button><button class="swatch"
+                                data-value="Bianco pearl" data-price="6800">Bianco pearl</button><button class="swatch"
+                                data-value="Rosso satin" data-price="9200">Rosso satin</button></div>
+                    </div>
+                    <div class="option-group"><label>Wheels, tires & brakes</label>
+                        <div class="swatches" data-option="wheels"><button class="swatch active"
+                                data-value="Forged black 20in" data-price="0">Forged black 20in</button><button
+                                class="swatch" data-value="Diamond-cut 21in" data-price="7800">Diamond-cut
+                                21in</button><button class="swatch" data-value="Carbon ceramic set"
+                                data-price="12500">Carbon ceramic set</button></div>
+                    </div>
+                    <div class="option-group"><label>Interior materials</label>
+                        <div class="swatches" data-option="interior"><button class="swatch active"
+                                data-value="Nero Alcantara" data-price="0">Nero Alcantara</button><button class="swatch"
+                                data-value="Cuoio leather" data-price="6400">Cuoio leather</button><button
+                                class="swatch" data-value="Arancio contrast" data-price="8900">Arancio contrast</button>
+                        </div>
+                    </div>
+                    <div class="option-group"><label>Performance & technology</label>
+                        <div class="swatches" data-option="performance"><button class="swatch active"
+                                data-value="Standard V12 hybrid" data-price="0">Standard V12 hybrid</button><button
+                                class="swatch" data-value="Track performance pack" data-price="18500">Track performance
+                                pack</button><button class="swatch" data-value="Full telemetry suite"
+                                data-price="11200">Full telemetry suite</button></div>
+                    </div>
+                    <div class="total"><span>ESTIMATED TOTAL</span><strong id="carTotal2">$608,358</strong></div>
+                    <div class="actions"><button class="button gold" id="saveCar">Save configuration</button><button
+                            class="button" id="quoteCar">Request custom quote</button></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"><span>© 2026 AUREX LUXURY</span><span>Geneva · Maranello · Worldwide</span><a
+            href="index.html">Return to main collection ↗</a></footer>
+    <script src="automobiles.js"></script>
+</body>
+
+</html>

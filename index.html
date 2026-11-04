@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurex Luxury — exceptional watches and automobiles." />
+  <title>Aurex / Luxury</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <header class="nav-bar">
+    <a class="logo" href="index.html">AUREX <span>/</span> LUXURY</a>
+    <nav class="nav-links" id="navLinks"><a href="watches.html">Watches</a><a href="automobiles.html">Automobiles</a><a
+        href="collections.html">Collections</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+    <div class="nav-actions"><button id="searchToggle" aria-label="Open search">⌕</button><button
+        aria-label="Wishlist">♡</button><button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+    <form class="search-panel" id="searchPanel"><span>⌕</span><input id="searchInput" type="search"
+        placeholder="Search timepieces or automobiles..." aria-label="Search products" /><button type="button"
+        id="searchClose">×</button></form>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="kicker">EST. 1987 · GENEVA / MARANELLO</p>
+        <h1>The world of<br><em>exceptional</em> luxury.</h1>
+        <p class="hero-subtitle">Discover timeless watches and extraordinary automobiles, curated for those who move
+          differently.</p>
+        <div class="hero-actions"><a class="gold-button" href="watches.html">Explore watches ↗</a><a class="outline-button"
+            href="automobiles.html">Explore automobiles ↗</a></div>
+      </div>
+      <div class="hero-footer"><span>SCROLL TO DISCOVER</span><i></i><span>01 / 04</span></div>
+    </section>
+    <section class="intro section-pad">
+      <div>
+        <p class="section-label"><span></span>THE AUREX WORLD</p>
+        <h2>Two worlds.<br><em>One standard.</em></h2>
+      </div>
+      <p class="intro-copy">Aurex is a destination for the rare, the remarkable, and the beautifully made. From
+        precision timepieces to raw performance, we bring together the icons that define a life well lived.</p>
+    </section>
+    <section class="worlds" id="collections">
+      <article class="world-card watch-world">
+        <div class="world-copy">
+          <p class="eyebrow">01 / TIMEPIECES</p>
+          <h3>The art<br>of <em>time.</em></h3>
+          <p>Masterful mechanics. Quiet confidence. A collection of icons designed to outlast the moment.</p><a
+            class="text-link" href="watches.html">Discover watches ↗</a>
+        </div>
+      </article>
+      <article class="world-card auto-world">
+        <div class="world-copy">
+          <p class="eyebrow">02 / AUTOMOTIVE</p>
+          <h3>The power<br>of <em>motion.</em></h3>
+          <p>Engineering without compromise. The world's most exhilarating machines, gathered under one roof.</p><a
+            class="text-link" href="automobiles.html">Discover automobiles ↗</a>
+        </div>
+      </article>
+    </section>
+    <section class="section-pad" id="watches">
+      <div class="section-heading">
+        <div>
+          <p class="section-label"><span></span>THE WATCH EDIT</p>
+          <h2>Timeless <em>icons.</em></h2>
+        </div><a class="view-all" href="watches.html">View collection ↗</a>
+      </div>
+      <div class="product-grid" id="watchGrid"></div>
+    </section>
+    <section class="performance-band" id="automobiles">
+      <div class="performance-copy">
+        <p class="section-label"><span></span>THE AUTOMOTIVE EDIT</p>
+        <h2>Born to<br><em>perform.</em></h2>
+        <p>For the road less travelled. Explore our selection of automotive masterpieces.</p><a class="gold-button"
+          href="automobiles.html">View automobiles ↗</a>
+      </div>
+    </section>
+    <section class="section-pad" id="carSection">
+      <div class="section-heading">
+        <div>
+          <p class="section-label"><span></span>THE DRIVE EDIT</p>
+          <h2>Extraordinary <em>engineering.</em></h2>
+        </div><a class="view-all" href="automobiles.html">View collection ↗</a>
+      </div>
+      <div class="product-grid car-grid" id="carGrid"></div>
+    </section>
+    <section class="manifesto" id="about">
+      <div class="manifesto-image"></div>
+      <div class="manifesto-copy">
+        <p class="section-label"><span></span>THE AUREX PHILOSOPHY</p>
+        <h2>Not just luxury.<br><em>A statement of excellence.</em></h2>
+        <p>We believe the objects we choose should tell a story. One of intention, craft, and the pursuit of something
+          beyond ordinary.</p><a class="text-link" href="#about">Our story ↗</a>
+      </div>
+    </section>
+    <section class="newsletter section-pad" id="contact">
+      <div>
+        <p class="section-label"><span></span>THE PRIVATE LIST</p>
+        <h2>Stay in the<br><em>know.</em></h2>
+      </div>
+      <div>
+        <p>Receive first access to new arrivals, private viewings, and the stories behind the exceptional.</p>
+        <form id="subscribeForm"><input type="email" placeholder="Your email address" aria-label="Your email address"
+            required><button class="gold-button">Subscribe ↗</button></form><small id="subscribeMessage">By subscribing,
+          you agree to our privacy policy.</small>
+      </div>
+    </section>
+  </main>
+  <footer class="footer section-pad">
+    <div class="footer-top"><a class="logo" href="#top">AUREX <span>/</span> LUXURY</a>
+      <p>Beyond luxury.<br>Beyond time.</p>
+      <div class="socials"><a href="#contact">IG</a><a href="#contact">WA</a><a href="#contact">IN</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Aurex Luxury</span><span>Geneva · Maranello · Worldwide</span><span>Privacy
+        / Terms</span></div>
+  </footer>
+  <script src="/aurex.js"></script>
+</body>
+
+</html>
